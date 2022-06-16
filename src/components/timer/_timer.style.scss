@@ -11,12 +11,12 @@ div.timer-comp {
   display: flex;
 
   div.timer__box {
-    margin: 0 1rem;
+    margin: 0 .8rem;
 
     &.active {
       div.digits {
         span.d-top {
-          animation: in 1s ease-in forwards infinite;
+          animation: in 1s ease-in infinite;
         }
         span.d-bottom-back {
           animation: out 1s ease-out forwards infinite;
@@ -26,7 +26,7 @@ div.timer-comp {
     }
 
     div.digits {
-      width: 6.8rem;
+      width: 6.6rem;
       height: 6rem;
       position: relative;
 
@@ -86,7 +86,7 @@ div.timer-comp {
 
         z-index: 10;
         overflow: hidden;
-        box-shadow: 0 -.1rem 0 #00000050;
+        box-shadow: 0 -.1rem 1rem #00000050;
 
         transform-origin: bottom;
         transition: .2s ease;
@@ -126,7 +126,7 @@ div.timer-comp {
 
         z-index: 10;
         overflow: hidden;
-        box-shadow: 0 .1rem 0 #00000050;
+        box-shadow: 0 .1rem 1rem #00000050;
 
         transform: scaleY(0);
         transform-origin: top;
@@ -156,8 +156,33 @@ div.timer-comp {
 
       color: $grayish_blue;
       text-align: center;
-      font-size: 1rem;
+      text-transform: uppercase;
+      font-size: .8rem;
       letter-spacing: .2rem;
+    }
+  }
+
+  @media screen and (min-width: 576px) {
+    transform: scale(1.6);
+    div.timer__box {
+      div.digits {
+      }
+      h2 {
+        margin-top: 1.5rem;
+        font-size: .6rem;
+      }
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    transform: scale(2.6);
+    div.timer__box {
+      div.digits {
+        border-radius: .25rem;
+      }
+      h2 {
+        margin-top: 1.5rem;
+        font-size: .6rem;
+      }
     }
   }
 }
