@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor]()
-- Live Site URL: [Vercel]()
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/page-created-using-vue-sass-js-vite-QjQGQHwsju)
+- Live Site URL: [Vercel](https://launch-countdown-timer-main-fm.vercel.app/)
 
 ## My process
 
