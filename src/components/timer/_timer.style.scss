@@ -31,7 +31,7 @@ div.timer-comp {
       position: relative;
 
       border-radius: .6rem;
-      box-shadow: 0 .6rem 0 #00000048;
+      box-shadow: 0 .5rem 0 #00000048;
 
       color: $soft_red;
       font-size: 3.2rem;
@@ -145,7 +145,10 @@ div.timer-comp {
           }
           51% {
             opacity: 0;
-            transform: scaleY(0);
+          }
+          100% {
+            opacity: 0;
+            transform: scaleY(1);
           }
         }
       }
