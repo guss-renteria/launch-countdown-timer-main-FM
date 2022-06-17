@@ -19,7 +19,7 @@ export default {
     const counter_interval = setInterval(() => {
       if(this.total_seconds <= 0) {
         [...this.$refs.parent.children].forEach(child => child.classList.remove('active'))
-        setTimeout(() => { this.time_left_prev = this.time_left }, 400)
+        setTimeout(() => { this.time_left_prev = this.time_left }, 1400)
 
         clearInterval(counter_interval)
         return
